@@ -1,0 +1,58 @@
+Dataset 1: company_data
+Description of Columns:
+
+company_id: Unique identifier for the company.
+company_name: Name of the company.
+Industry: Industry to which the company belongs (e.g., Technology, Finance, Healthcare). 
+Country: Country where the company is headquartered. 
+founded_year: The year the company was founded.
+market_cap: Market capitalization of the company (in billions USD).
+
+Dataset 2: stock_price_data
+Description of Columns:
+
+price_id: Unique identifier for the stock price record.
+company_id: Unique identifier for the company (linked to company_data).
+Date: The date of the stock price record. 
+open_price: Opening price of the stock on that date.
+close_price: Closing price of the stock on that date.
+high_price: Highest price of the stock during that day.
+low_price: Lowest price of the stock during that day.
+Volume: The trading volume of the stock on that date. 
+
+Dataset 3: trading_volume_data
+Description of Columns:
+
+volume_id: Unique identifier for the trading volume record.
+company_id: Unique identifier for the company.
+Date: Date of the trading activity. 
+buy_volume: The number of shares bought.
+sell_volume: The number of shares sold.
+net_volume: The difference between buy and sell volumes.
+
+Dataset 4: financial_transaction_data
+Description of Columns:
+
+transaction_id: Unique identifier for the financial transaction.
+company_id: Unique identifier for the company.
+transaction_date: The date of the transaction.
+transaction_type: Type of transaction (e.g., Buy, Sell, Dividend, Split).
+transaction_amount: Total amount involved in the transaction (in USD).
+transaction_currency: Currency in which the transaction was conducted (e.g., USD, EUR).
+
+Dataset 5: company_performance_data
+Description of Columns:
+
+performance_id: Unique identifier for the performance record.
+company_id: Unique identifier for the company.
+Date: The date of the performance record. 
+Revenue: Revenue of the company for that quarter/year (in millions USD). 
+Profit: Profit of the company for that quarter/year (in millions USD). 
+Eps: Earnings per share (EPS) for the company. 
+
+Explanation of the Datasets:
+Company Data: Contains 500 records of company details, including industry, market capitalization, and location.
+Stock Price Data: Tracks daily stock prices (open, close, high, low) and trading volumes over 10,000 records.
+Trading Volume Data: Contains 5,000 records of daily buy and sell volumes for each company, along with the net volume (buy - sell).
+Financial Transaction Data: Includes 8,000 records of transactions like stock buys, sells, dividends, and splits, along with transaction amounts and currencies.
+Company Performance Data: Contains 3,000 records of company performance metrics such as revenue, profit, and earnings per share (EPS).
